@@ -254,7 +254,7 @@
 }
 .snowCode{
   position: relative;
-  top: -13%;
+  top: -60px;
   z-index: 1;
 }
 
@@ -580,4 +580,69 @@ nav ul a:hover{
   width:400px;
   height: 70px;
   font-size: 40px;
+}
+.contactme{
+
+
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+ 
+}
+.contactme .content-black{
+  background-image: url('../public/CONTACTMe3.svg');
+}
+.contactme .content-white{
+  background-image: url('../public/CONTACTMe3w.svg');
+  color: #D3DDCE;
+
+}
+.contactme .content{
+ 
+
+  
+  background-size: cover;
+  width: 100%;
+  height: 73%;
+ 
+  padding-top: 10%;
+   
+  
+  
+  
+}
+
+.contactme .content .contact{
+  margin-left: 10%;
+  width: 600px;
+  list-style: none;
+ 
+  font-size: 20px;
+}
+.contactme .content .contact h1{
+  margin-bottom: 50px;
+}
+.contactme .content .contact li{
+  font-weight: bold;
+  font-size: 20px;
+}
+.contactme .content .contact li a{
+  font-weight: normal;
+  color: #596057;
+  
+}
+ul{
+  list-style: none;
+ 
+ 
+}
+.contactme ul li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+ 
 }

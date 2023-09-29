@@ -157,7 +157,7 @@
 /*card*/
 .card{
 
-  width: max(140vh,1200px) ;
+  max-width:  90%;
   position: absolute;
   z-index: 12;
  
@@ -173,19 +173,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
+  
 }
 .card-sans{
   width: 90% ;
  
   z-index: 999;
  
-  font-size: 32px;
+  font-size: 30px;
  
  
   border-radius: 10px;
   
-  padding: 30px; 
+  padding: 34px; 
   
 }
 .cardB{
@@ -234,7 +234,7 @@
 }
 .Frame.w{
   background-color: #252323;
-  color: #fff;
+  color: #D3DDCE;
 }
 
 @keyframes showbtn {
@@ -256,6 +256,7 @@
   position: relative;
   top: -60px;
   z-index: 1;
+  
 }
 
  .snowCode img{
@@ -302,7 +303,7 @@
   animation-delay: 3s;
 }
 .snowCode img:nth-child(7){
-  left: 60%;
+  left: 80%;
   width: 80px;
   height: 80px;
   animation-delay: 7s;
@@ -368,7 +369,7 @@
   100%{
     opacity: 0;
     border-radius: 50%;
-    transform: translateY(1000px) rotate(360deg);
+    transform: translateY(97vh) rotate(360deg);
   } 
 }
 #tganimation{
@@ -383,7 +384,8 @@
   display: flex;
   flex-direction: line;
   width: 100%;
-  overflow: hidden;
+  
+ 
 }
 .navLeft{
   width: 18%;
@@ -395,7 +397,7 @@
   z-index: 999;
   display: flex;
   flex-direction: column;
- gap: 40px;
+
 }
 
 
@@ -404,7 +406,7 @@
   height: 10%;
  
   position: relative;
-
+  margin-bottom: 40px;
   
 }
 .Haut img{
@@ -424,7 +426,7 @@
   width: 100%;
   height: 75%;
   overflow-y: scroll;
-
+  margin-bottom: 40px;
 }
 .Bot .Projects{ 
   cursor: pointer;
@@ -544,25 +546,20 @@ nav ul a:hover{
   
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-top: 13%;
   width: 55%;
-  height: 100vh;
+  height: 70vh;
   align-items: center;
-  
+  gap: 87px;
 }
 .poro img{
   width: 160px;
   height: 160px;
+  margin-right: 40px;
   border-radius: 20px;
   object-fit: cover;
 }
-.poro div{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 40px;
-  align-self: self-start;
-}
+
 .poro p{
   color: #ffffff;
   font-size: 65px;
@@ -577,8 +574,8 @@ nav ul a:hover{
   background-color: #1D1A1A;
   border: 2px solid white;
   color: #fff;
-  width:400px;
-  height: 70px;
+  width:420px;
+  height: 90px;
   font-size: 40px;
 }
 .contactme{
@@ -645,4 +642,114 @@ ul{
   margin-bottom: 20px;
   gap: 10px;
  
+}
+/* dadasd */
+ 
+.wrapper{
+  display: flex;
+  
+    
+}
+ 
+.poro div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+   
+ 
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+.wrapper .dynamic-txts{
+  margin-left: 0px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+ 
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 106%;
+  width: 103%;
+  margin-top: 4px;
+
+  animation: typing 3s steps(10) infinite;
+}
+.dynamic-txtsB li span::after{
+  background: #1D1A1A;
+  border-left: 2px solid #fff;
+}
+.dynamic-txtsW li span::after{
+  background: #D3DDCE;
+  border-left: 2px solid #1D1A1A;
+}
+.dynamic-txts li:nth-child(2) span{
+  color: #C51605;
+}
+.dynamic-txts li:nth-child(3) span{
+  color: #6205c5;
+}
+.dynamic-txts li:nth-child(4) span{
+  color: #315e8a;
+}
+.dynamic-txts li:nth-child(5) span{
+  color: #c96412;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+.btnHome{
+  background-color: rgba(220, 205, 205, 0.32);
+  width: 90%;
+  margin: 10px;
+  border-radius: 20px;
+  color: #1D1A1A;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  color: #D3DDCE;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+ 
+}
+.navLeft a{
+  text-decoration: none;
+} 
+/* .btnHome p{
+     margin-left: 30%; 
+}
+  */
+  .btnHome p{
+      margin-left: 30%;
 }

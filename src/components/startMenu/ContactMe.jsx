@@ -14,7 +14,7 @@ import githubW from '../../assets/githubW.svg'
 // import alliCon from '../../../public/icons-all2.svg'
 function ContactMe({theme}) {
   return (
-    <div className='contactme' id='contact'>
+    <div className='contactme scroll-item' id='contact'>
         <div className={"content "+ (theme === 'light' ? ' content-white' : ' content-black')}>
             <div className='contact'>
                 <h1>Contact Me :</h1>

@@ -36,7 +36,7 @@ function App() {
   console.log(isAnimationPaused)
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className="App" id={theme}>
+      <div className="App scroll-container " id={theme}>
     
     {theme === 'dark' ? (
       

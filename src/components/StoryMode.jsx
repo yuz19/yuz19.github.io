@@ -1,8 +1,9 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import { Link } from 'react-router-dom';
+import { ThemeContext } from '../App';
 import GitIntro from './GitIntro';
-function StoryMode({theme,setTheme}) {
-  
+function StoryMode({setTheme}) {
+  const { theme } = useContext(ThemeContext);
   return (
     <div className='Story1'>
     <p className='hello'>Hello ,I am&ensp;<span className={(theme === 'light' ? ' w' : ' b')}>YUZ19</span></p>

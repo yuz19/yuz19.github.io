@@ -3,6 +3,10 @@ import { Link,useLocation } from 'react-router-dom'
 
 function NavBar({theme}) {
     const colorLogo = theme === 'light' ? '#1D1A1A' : '#D3DDCE';
+  
+    const colorLi = {
+        color: theme === 'light' ? '#1D1A1A' : '#fff', // Set the color conditionally
+      };
   return (
     <nav>
         <div>
@@ -11,18 +15,18 @@ function NavBar({theme}) {
             </svg>
         </div>
         <ul>
-            <li>
-                <Link to="/Projects">
+            <li >
+                <Link to="/Projects" style={colorLi}>
                     My Projects
                 </Link>
             </li>
-            <li>
-                <a href="#card-sans">
+            <li  >
+                <a href="#card-sans" style={colorLi}>
                     About Me
                 </a>
             </li>
             <li>
-                 <a href="#contact">
+                 <a href="#contact" style={colorLi}>
                     Contact Me
                 </a>
             </li>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function GitIntro({theme}) {
   return (
-    <div className={"card" + (theme === 'light' ? ' cardW' : ' cardB')} >
+    <div className={"scroll-item card" + (theme === 'light' ? ' cardW' : ' cardB')} >
     <p>
     yuz19/README.md<br/><br/><br/>
     Hi there 👋

@@ -1,7 +1,11 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useContext} from 'react'
 import BaseProjects from './BaseProjects'
+import { ThemeContext } from '../App';
+import { Link,useLocation } from 'react-router-dom'
+
 import BtnSlider from './BtnSlider';
-function Projects({theme}) {  const [objIndex, setObjIndex] = useState(1);
+function Projects() {  const [objIndex, setObjIndex] = useState(1);
+  const { theme } = useContext(ThemeContext);
   //const [objId, setObjId] = useState(1);
   const [matchingProject, setMatchingProject] = useState(null);
   const [slideIndex, setSlideIndex] = useState(1);
@@ -93,6 +97,14 @@ function Projects({theme}) {  const [objIndex, setObjIndex] = useState(1);
 return (
   <div className="container">
     <div className="navLeft ">
+    <Link to="/">
+      <div className='btnHome'>
+        <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.5411 19.5598C11.8349 19.2778 12 18.8954 12 18.4967C12 18.098 11.8349 17.7157 11.5411 17.4337L3.78308 9.99092L11.5411 2.54815C11.8266 2.26457 11.9846 1.88476 11.981 1.49052C11.9774 1.09629 11.8126 0.719167 11.522 0.44039C11.2314 0.161612 10.8383 0.00348303 10.4274 5.72205e-05C10.0165 -0.00336859 9.62058 0.148184 9.32499 0.422075L0.458878 8.92788C0.165059 9.20985 0 9.59222 0 9.99092C0 10.3896 0.165059 10.772 0.458878 11.054L9.32499 19.5598C9.6189 19.8416 10.0175 20 10.4331 20C10.8486 20 11.2472 19.8416 11.5411 19.5598Z" fill="#D3DDCE"/>
+        </svg>
+        <p>Home</p>
+      </div>
+      </Link>
       <div className="Haut">
         <img src="./ME.png" alt="" />
         <p>yuz19</p>

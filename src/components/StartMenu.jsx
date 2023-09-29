@@ -7,14 +7,14 @@ import ContactMe from './startMenu/ContactMe';
 function StartMenu( ) {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className='startMenu'>
+    <div className='startMenu scroll-item'>
  
         <NavBar theme={theme} />
         <Start theme={theme} />
         <div className='about me' id='card-sans'>
           <div className={"card-sans" + (theme === 'light' ? ' cardW' : ' cardB')} >
             <p>
-            yuz19/README.md<br/><br/><br/>
+            yuz19/README.md<br/><br/>
             Hi there 👋
             I'm yuz19, a passionate web developer who loves creating websites and learning new things. I'm always seeking to improve my skills and stay up-to-date with the latest web development technologies.
             </p>

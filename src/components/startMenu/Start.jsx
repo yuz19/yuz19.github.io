@@ -19,10 +19,9 @@ function Start({theme}) {
               <div className="static-txt" style={am}>I'm</div>
               <ul className={"dynamic-txts " + (theme === 'light' ? ' dynamic-txtsW ' : 'dynamic-txtsB')} >
               <li style={spanStyle}>
-                <span >YUZ19</span>
+                <span >Meridja Nabil</span>
               </li>
 
-                <li style={am}>a <span >YouTuber</span></li>
                 <li style={am}>a <span>Designer</span></li>
                 <li style={am}>a <span>Developer</span></li>
                

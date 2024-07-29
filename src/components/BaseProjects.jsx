@@ -16,6 +16,20 @@ const BaseProjects=[
         numberImage:6,
         color:"#3f5cb9"
     },
+    {
+        id:uuidv4(),
+        Name:"To Do List",
+        Nameid:"todo",
+        numberImage:10,
+        color:"#F1F0E8"
+    },
+    {
+        id:uuidv4(),
+        Name:"Outil BI (Business Intelligence)",
+        Nameid:"master",
+        numberImage:12,
+        color:"#F1F0E8"
+    },
  
 ]
 export default BaseProjects

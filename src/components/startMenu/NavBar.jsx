@@ -15,18 +15,21 @@ function NavBar({theme}) {
             </svg>
         </div>
         <ul>
-            <li >
-                <Link to="/Projects" style={colorLi}>
+          <li className={`${theme === 'light' ? 'light' : 'dark'}`}>
+
+                <Link to="/Projects" >
                     My Projects
                 </Link>
             </li>
-            <li  >
-                <a href="#card-sans" style={colorLi}>
+            <li className={`${theme === 'light' ? 'light' : 'dark'}`}>
+
+                <a href="#card-sans" >
                     About Me
                 </a>
             </li>
-            <li>
-                 <a href="#contact" style={colorLi}>
+            <li className={`${theme === 'light' ? 'light' : 'dark'}`}>
+
+                 <a href="#contact">
                     Contact Me
                 </a>
             </li>

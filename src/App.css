@@ -403,21 +403,25 @@
 
 
 .Haut{
-  height: 10%;
- 
+  height: 13%;
+  background-image: url('../public/ME.png');
+  background-size: cover;
+  background-position: center;
   position: relative;
-  margin-bottom: 40px;
-  
+ 
+  display: flex;
+  align-items: end;
+  padding: 10px;
 }
-.Haut img{
+/* .Haut img{
   width: 100%;
   
-}
+} */
 .Haut p{
-  position: absolute;
+  
   font-size: 30px;
-  bottom: -30%;
-  left: 5%;
+  background-color: #1211116a;
+  padding: 0 4px;
 }
 .Bot{
   position: relative;
@@ -432,7 +436,7 @@
   cursor: pointer;
   width: 100%;
   position: relative;
-  
+ 
   padding: 20px;
   font-size: 23px;
   display: flex;
@@ -539,8 +543,19 @@ nav ul   a{
   font-weight: 600;
   font-size: 20px;
 }
-nav ul a:hover{
+nav ul li.dark a{
+  color: #fff;
+}
+nav ul li.dark a:hover{
   color: #D3DDCE;
+}
+
+nav ul li.light a{
+  color: #000;
+  
+}
+nav ul li.light a:hover{
+  color: #565555;
 }
 .poro{
   
@@ -593,9 +608,9 @@ nav ul a:hover{
   background-image: url('../public/CONTACTMe3.svg');
 }
 .contactme .content-white{
-  background-image: url('../public/CONTACTMe3w.svg');
+  background-image: url('../public/CONTACTMe2w.svg');
   color: #D3DDCE;
-
+ 
 }
 .contactme .content{
  
@@ -648,7 +663,6 @@ ul{
 .wrapper{
   display: flex;
   
-    
 }
  
 .poro div{
@@ -672,18 +686,19 @@ ul{
 }
 .dynamic-txts li{
   list-style: none;
-
+ 
   font-size: 60px;
   font-weight: 500;
   position: relative;
-  top: 0;
-  animation: slide 12s steps(4) infinite;
+  top: 3px;
+  animation: slide 18s steps(3) infinite;
 }
 @keyframes slide {
   100%{
-    top: -360px;
+    top: -280px;
   }
 }
+
 .dynamic-txts li span{
   position: relative;
   margin: 5px 0;
@@ -698,7 +713,7 @@ ul{
   width: 103%;
   margin-top: 4px;
 
-  animation: typing 3s steps(10) infinite;
+  animation: typing 6s steps(10) infinite;
 }
 .dynamic-txtsB li span::after{
   background: #1D1A1A;

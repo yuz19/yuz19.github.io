@@ -106,8 +106,8 @@ return (
       </div>
       </Link>
       <div className="Haut">
-        <img src="./ME.png" alt="" />
-        <p>yuz19</p>
+        {/* <img src="./ME.png" alt="" /> */}
+        <p>Meridja Nabil </p>
       </div>
       <div className="Bot">
         {BaseProjects.map((obj, index) => (
